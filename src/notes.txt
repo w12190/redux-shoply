@@ -1,0 +1,27 @@
+TODO
+x rootReducer
+x setup Provider
+x action creators
+- make list of ItemCards
+  - w/ add to cart button
+  - remove from cart button
+- display total price in navbar
+- flesh out ShoppingCart.js
+
+Later
+- finish ItemDetails.js
+
+- tests for action creators and reducers
+- styling :D
+  - <NavBar> in Navbar.js from Reactstrap
+
+Redux
+1) cart state
+2) complete product inventory from JSON
+  - import JSON into rootReducer.js
+
+Structure
+- App -> ItemList -> Product
+
+
+ItemList gets items = [stuff]
