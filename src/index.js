@@ -8,6 +8,8 @@ import { createStore } from 'redux'
 import { Provider } from 'react-redux'
 import rootReducer from './rootReducer'
 
+/** Create redux store, and renders the App with a router */
+
 const store = createStore(rootReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__
   && window.__REDUX_DEVTOOLS_EXTENSION__()

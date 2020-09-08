@@ -25,3 +25,7 @@ Structure
 
 
 ItemList gets items = [stuff]
+
+Questions
+- docstring convention for components that use redux, should we note which can components dispatch?
+

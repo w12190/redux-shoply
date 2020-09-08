@@ -1,6 +1,11 @@
 import React from 'react'
 import { NavLink} from 'react-router-dom'
 
+/**Renders Navbar
+ * 
+ * App -> Navbar
+ */
+
 function Navbar(){
   return (
     <div>
