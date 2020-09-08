@@ -12,17 +12,22 @@ import ProductCard from './ProductCard'
  */
 function ProductList({ products }){
 
+  // mapping -> to map
   const productsArray = []
-
 
   for (let key in products){
     productsArray.push({...products[key], key})
   }
+
   console.log("productsArray", productsArray);
 
   return (
     <div>
-      {productsArray.map(product => <ProductCard name={product.name} price={product.price} key={product.key}/>)}
+      {productsArray.map(product => <ProductCard 
+                                      name={product.name} 
+                                      price={product.price} 
+                                      key={product.key} 
+                                      id={product.key}/>)}
     </div>
   )
 }

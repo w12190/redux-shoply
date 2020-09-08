@@ -2,14 +2,14 @@ TODO
 x rootReducer
 x setup Provider
 x action creators
-- make list of ItemCards
-  - w/ add to cart button
-  - remove from cart button
-- display total price in navbar
-- flesh out ShoppingCart.js
+x make list of ItemCards
+  x w/ add to cart button
+  x remove from cart button
+x display total price in navbar
 
 Later
-- finish ItemDetails.js
+- finish ItemDetails.js 
+- flesh out ShoppingCart.js (step 3)
 
 - tests for action creators and reducers
 - styling :D

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import ProductList from './ProductList'
-import { useSelector } from 'react-redux'
+import { useSelector, shallowEqual } from 'react-redux'
 import Navbar from './Navbar';
 
 /** Renders the App
@@ -9,17 +9,20 @@ import Navbar from './Navbar';
  * Store
  * - products: pulls products from inventory
  * 
- * App -> ProductList
+ * App -> {Navbar, ProductList, ShoppingCart}
  */
 
 function App() {
   // State
-  const products = useSelector(store => store.products)
-  
+  const products = useSelector(store => (store.products))
+
+
   return (
     <div className="App">
       <Navbar />
-      <ProductList products={products}/>
+      <main>
+        <ProductList products={products} />
+      </main>
     </div>
   );
 }
