@@ -6,10 +6,13 @@ import { NavLink } from "react-router-dom"
 
 /** Renders a component for each product in inventory
  * 
+ * Dispatches .....
+ * 
  * Props
  * - name
  * - price
  * - id 
+ * 
  * 
  * App -> Navbar, Routes (-> ProductList, ShoppingCart, ProductDetails)
  */
@@ -25,7 +28,7 @@ function ProductCard({ name, price, id }) {
         <CardBody className="text-center">
           <CardTitle>
             <p>Name: {name}</p>
-            <p>Price: {price}</p> <br />
+            <p>Price: {price}</p> 
             {<NavLink to={`products/${id}`}> Product Details</NavLink>}
           </CardTitle>
           <button onClick={() => dispatch(addItem(id))}>Add</button>

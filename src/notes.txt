@@ -32,4 +32,9 @@ ItemList gets items = [stuff]
 
 Questions
 - docstring convention for components that use redux, should we note which can components dispatch?
+    - think of docstring as a contract with other components; including changes elsewhere in the system
 - after adding ~a dozen items the decimals break, why?
+    options:
+    - track things in cents ($17.00 => 1700 cents); to track as integer
+     - bonuses: less memory to store, faster calculation
+    - deal with floating points & round later
