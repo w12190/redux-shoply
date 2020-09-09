@@ -15,7 +15,7 @@ function Navbar(){
     <div>
       <nav>
         <NavLink to="/"> Home </NavLink>
-        <NavLink to="/cart"> Cart (${cartTotal})</NavLink>
+        <NavLink to="/shoppingcart"> Cart (${cartTotal})</NavLink>
       </nav>
     </div>
   )

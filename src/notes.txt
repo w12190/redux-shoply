@@ -6,10 +6,14 @@ x make list of ItemCards
   x w/ add to cart button
   x remove from cart button
 x display total price in navbar
+x finish ItemDetails.js 
 
-Later
-- finish ItemDetails.js 
-- flesh out ShoppingCart.js (step 3)
+Shopping Cart Outline
+1) get-> cart = { [id]: numProducts, ... }
+2) use the keys to get products' information: store.products[id]
+3) display Name, Price, and numProduct (from cart) in a list via mapping
+4) add add+remove buttons to fire events to modify quantity
+*/
 
 - tests for action creators and reducers
 - styling :D
@@ -28,4 +32,4 @@ ItemList gets items = [stuff]
 
 Questions
 - docstring convention for components that use redux, should we note which can components dispatch?
-
+- after adding ~a dozen items the decimals break, why?
